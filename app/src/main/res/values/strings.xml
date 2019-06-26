@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">To Do</string>
+    <string name="add_a_new_item">Add a new item...</string>
+    <string name="add">Add</string>
+    <string name="create_a_to_do_list_by_entering_each_task_item_below">Create a To-Do list by entering each task/item below</string>
+    <string name="click_on_an_item_to_edit_long_click_to_delete">Click on an item to edit. Long click to delete.</string>
 </resources>
