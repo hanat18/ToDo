@@ -75,6 +75,17 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                EditText newItem = (EditText) findViewById(R.id.new_item);
+                String item = items.get(position);
+                items.remove(position);
+                itemsAdapter.notifyDataSetChanged();
+                writeItems();
+                newItem.setText(item);
+            }
+        });
     }
 
     // returns the file in which the data is stored
